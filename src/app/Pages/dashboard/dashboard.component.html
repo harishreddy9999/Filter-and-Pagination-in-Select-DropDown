@@ -1,0 +1,44 @@
+<nav class="navbar  navbar-default navbar-fixed-top" id="top">
+    <ul class="nav navbar-nav logo">
+        <a class="navbar-brand">
+            <img src="assets\images\MobiLogo.jpg" class="mainlogo">
+        </a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right logoutbtnul">
+      <li class="langDisable">
+        <button class="btn btn-warning logoutbtn" (click)="Logout()">Logout</button>
+      </li>
+    </ul>
+</nav>
+<div class="content">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <label class="lbltext">Country</label>
+            <div class="dropdown">
+                <div (click)="ShowSponsors()" class="dropbtn">
+                    <button class="slecttag" id="sponsorvalue">Select Country</button>
+                    <span class="glyphicon glyphicon-triangle-bottom">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </div>
+                <div id="SponsorDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." name="searchhospital" [(ngModel)]="SearchCountry" class="myInput" id="profInput"
+                    (ngModelChange)="filterSponsor()">
+                    <option *ngFor="let country of SortedCountries" [value]="country.IDNo"
+                    (click)="SelectedCountry(country.CountryName)">{{country.CountryName}}</option>
+                    <p class="addmore" *ngIf="ShowAddMore" (click)="GetRecords()">Add 5 More</p>
+                    <div class="notfound" *ngIf="ShowNotFound">
+                        <p class="notfoundp">"{{SearchCountry}}" not found</p>
+                        <button class="notfoundb" *ngIf="ShowAddBtn" (click)="AddCountry()">Add & Select</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lds-ripple" *ngIf="ShowLoading">
+  <div></div>
+  <div></div>
+</div>

@@ -1,0 +1,73 @@
+.content{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-fixed-top{
+    /* display: flex;
+    justify-content: space-between;  */
+    min-height: 70px !important;
+    height: 70px !important;
+    background-color: #fdfdfd;
+    border-bottom: 2px solid #0b5cb1 !important;
+    padding:0px !important;
+}
+@media screen and (max-width: 768px){
+    .logo{
+        display: inline-block !important;
+    }
+
+    .navbar-fixed-top{
+        background-color: white !important;
+    }
+}
+.navbar-brand {
+    float: left;
+    height: 70px;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px 10px !important;
+}
+.mainlogo{
+    margin: 0px 20px;
+    height: 70%;
+    width: 100%;
+    z-index: 10;
+}
+.loginbox{
+    width: 35%;
+    margin-top: 100px;
+    box-shadow: 0px 0px 4px 3px rgb(139,69,19);
+    /* background: linear-gradient(45deg, black, transparent); */
+    padding: 50px 20px 50px 20px;
+    border-radius: 15px;
+    background: white;
+}
+.loginform{
+    width:70%;
+    margin: 0px auto;
+}
+
+@media screen and (max-width:768px){
+    .loginbox{
+        width: 90%;
+        top: 200px;
+        right: 5%;
+    }
+    .loginform{
+        width:90%;
+    }
+    
+}
+.login_btn {
+    width: 100%;
+    background: #1b6188 !important;
+    color: white !important;
+    border-radius: 25px;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}

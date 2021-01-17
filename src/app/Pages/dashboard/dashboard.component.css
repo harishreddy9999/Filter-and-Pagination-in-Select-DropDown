@@ -1,0 +1,111 @@
+.content{
+    width: 100%;
+    padding: 20px;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: #555;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 10px 5px;
+    cursor: pointer;
+    min-height: 35px;
+    width: 100%;
+}
+ 
+.slecttag:hover, .slecttag:focus{
+    border: none !important;
+    outline: none;
+}
+#profInput{
+    font-size: 16px;
+    padding: 5px 15px;
+    width: 100%;
+    outline: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    max-height:300px;
+    width: 100%;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    z-index: 1;
+}
+.dropdown-content option {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+ 
+    display: block;
+}
+.dropdown option:hover {
+    background-color: #ddd;
+    cursor:pointer;
+}
+.show {
+    display: block !important;
+}
+.glyphicon{
+    float: right; 
+    top:3px !important;
+    font-size:20px;
+    width:20px;
+}
+.slecttag{
+    border: none;
+    padding: 0px;
+    background-color:white;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Lato", sans-serif !important;
+    width: 90%;
+    cursor: pointer;
+}
+.addmore{
+    width: 100%;
+    display: block;
+    margin-bottom: 6px !important;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    color: blueviolet;
+}
+.notfound{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.notfoundp{
+    color: saddlebrown;
+    font-size: 16px;
+    font-weight: 500;
+}
+.notfoundb{
+    font-size: 14px;
+    height: 30px;
+    font-weight: 500;
+    border: 1px solid saddlebrown;
+    color: #3b7778;
+    padding: 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logoutbtn{
+    background-color: transparent;
+    border: 2px solid darkblue;
+    color: saddlebrown;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+.logoutbtnul{
+    margin: 0px 20px;
+}

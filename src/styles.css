@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+.lds-ripple {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #9e9e9e;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #0a21c3;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    margin:20% 50%;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+  .navbar-fixed-top{
+    /* display: flex;
+    justify-content: space-between;  */
+    min-height: 70px !important;
+    height: 70px !important;
+    background-color: #fdfdfd;
+    border-bottom: 2px solid #0b5cb1 !important;
+    padding:0px !important;
+}
+@media screen and (max-width: 768px){
+    .logo{
+        display: inline-block !important;
+    }
+
+    .navbar-fixed-top{
+        background-color: white !important;
+    }
+}
+.navbar-brand {
+    float: left;
+    height: 70px;
+    padding: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0px 10px !important;
+}
+.mainlogo{
+    margin: 0px 20px;
+    height: 70%;
+    width: 100%;
+    z-index: 10;
+}
